@@ -6,6 +6,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('home');
+  this.route('radio');
+  this.route('nature');
+  this.route('medical');
 });
 
 export default Router;
