@@ -1,0 +1,85 @@
+{{outlet}}
+<div class="row home">
+  <div class="col-xs-12">
+  	<h3 class="text-center">Radioactivité</h3>
+  	<div class="row no-margin">
+  		<div class="col-xs-2">
+	  		<div class="atom" id="atom" class="atom off" data-toggle='modal' data-target='#medicalModal'>
+	  		</div>
+  		</div>
+  		<div class="col-xs-8 little-margin2">
+  			<div class="progress active">
+  			  <div class="progress-bar progress-bar-success bleu-bg" style="width: 15%"></div>
+  			</div>
+  		</div>
+  		<div class="col-xs-2">
+  			0.12 µSv/h
+  		</div>
+  	</div>
+
+	<ul class="list-group">
+		<li class="list-group-item vert-bg">
+			<div class="row no-margin">
+				<div class="col-xs-3">
+					<a href="#" data-toggle='modal' data-target='#natureModal'><img class="little-margin2" src="assets/img/Landscape-100.png" height="75" alt=""></a>
+				</div>
+				<div class="col-xs-8">
+					<h3 class="no-margin text-center">Origine naturelle</h3>
+					<p class="text-center">Niveau : Non détecté</p>
+				</div>
+				<div class="col-xs-1 no-padding little-margin">
+					{{#link-to 'nature'}}<span class="badge bleu-bg"><span class="glyphicon glyphicon-info-sign"></span></span>{{/link-to}}
+				</div>
+			</div>
+		</li>
+		<li class="list-group-item jaune-bg">
+			<div class="row no-margin">
+				<div class="col-xs-3">
+					<a href="#" data-toggle='modal' data-target='#medicalModal'><img class="little-margin2" src="assets/img/Hospital 3-100.png" height="75" alt=""></a>
+				</div>
+				<div class="col-xs-8">
+					<h3 class="no-margin text-center">Origine médicale</h3>
+					<p class="text-center">Niveau : Détecté</p>
+				</div>
+				<div class="col-xs-1 no-padding little-margin">
+					{{#link-to 'medical'}}<span class="badge bleu-bg"><span class="glyphicon glyphicon-info-sign"></span></span>{{/link-to}}
+				</div>
+			</div>
+		</li>
+		<li class="list-group-item vert-bg">
+			<div class="row no-margin">
+				<div class="col-xs-3">
+					<a href="#" data-toggle='modal' data-target='#nucleaireModal'><img class="little-margin2" src="assets/img/Nuclear Power Plant-100.png" height="75" alt=""></a>
+				</div>
+				<div class="col-xs-8">
+					<h3 class="no-margin text-center">Origine nucléaire</h3>
+					<p class="text-center">Niveau : Non détecté</p>
+				</div>
+				<div class="col-xs-1 no-padding little-margin">
+					{{#link-to 'nature'}}<span class="badge bleu-bg"><span class="glyphicon glyphicon-info-sign"></span></span>{{/link-to}}
+				</div>
+			</div>
+		</li>
+	</ul>
+  </div>
+  <div id="natureModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="modal-dialog modal-lg">
+	      <div class="modal-content">
+	          <div class="modal-body">
+	          	<h3 class="text-center">Radioactivité naturelle</h3>
+      			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sit corrupti voluptate ea! Sequi consectetur, porro ex eos maiores rerum, provident vero sed id officia reiciendis, itaque fugit laboriosam nemo.
+	          </div>
+	      </div>
+	    </div>
+	</div>
+	<div id="medicalModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="modal-dialog modal-lg">
+	      <div class="modal-content">
+	          <div class="modal-body">
+	          	<h3 class="text-center">Médical</h3>
+      			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel sit corrupti voluptate ea! Sequi consectetur, porro ex eos maiores rerum, provident vero sed id officia reiciendis, itaque fugit laboriosam nemo.
+	          </div>
+	      </div>
+	    </div>
+	</div>
+</div>
