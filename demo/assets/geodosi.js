@@ -112,12 +112,7 @@ define('geodosi/router', ['exports', 'ember', 'geodosi/config/environment'], fun
     location: config['default'].locationType
   });
 
-  Router.map(function () {
-    this.route('home');
-    this.route('radio');
-    this.route('nature');
-    this.route('medical');
-  });
+  Router.map(function () {});
 
   exports['default'] = Router;
 
@@ -2429,7 +2424,7 @@ catch(err) {
 if (runningTests) {
   require("geodosi/tests/test-helper");
 } else {
-  require("geodosi/app")["default"].create({"name":"geodosi","version":"0.0.0+08173810"});
+  require("geodosi/app")["default"].create({"name":"geodosi","version":"0.0.0+75be45e0"});
 }
 
 /* jshint ignore:end */
